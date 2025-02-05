@@ -4,7 +4,7 @@
   "author": "Guru Ramu",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server",
     "start:production": "pm2 start --name 'jira_client' server.js",
     "test:jest": "jest",
     "test:cypress": "node_modules/.bin/cypress open",
