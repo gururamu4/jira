@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-2xl font-medium my-1;
+}
+
+h2 {
+    @apply text-base font-medium my-1;
+}
