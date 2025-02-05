@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import { IssuePriority, IssuePriorityCopy } from 'shared/constants/issues';
+import { IssuePriority, IssuePriorityCopy } from 'shared/../constants/issues';
 import { Select, IssuePriorityIcon } from 'shared/components';
 
 import { SectionTitle } from '../Styles';

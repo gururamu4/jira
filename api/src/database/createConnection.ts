@@ -1,6 +1,6 @@
 import { createConnection, Connection } from 'typeorm';
+import * as entities from '../entities';
 
-import * as entities from 'entities';
 console.log('process.env.DATABASE_URL', process.env.DATABASE_URL);
 const createDatabaseConnection = async (): Promise<Connection> => {
   try {

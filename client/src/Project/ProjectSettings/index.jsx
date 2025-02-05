@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ProjectCategory, ProjectCategoryCopy } from 'shared/constants/projects';
+import { ProjectCategory, ProjectCategoryCopy } from 'shared/../constants/projects';
 import toast from 'shared/utils/toast';
 import useApi from 'shared/hooks/api';
 import { Form, Breadcrumbs } from 'shared/components';

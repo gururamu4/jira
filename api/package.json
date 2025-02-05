@@ -7,7 +7,7 @@
     "start:test": "cross-env NODE_ENV='test' DB_DATABASE='jira_test' npm start",
     "start:production": "pm2 start --name 'jira_api' node -- -r ./tsconfig-paths.js build/index.js",
     "build": "tsc && npm run start",
-    "start": " node ./tsconfig-paths.js build/index.js",
+    "start": "node -r tsconfig-paths/register build/index.js",
     "start:dev": "ts-node src/index.ts",
     "pre-commit": "lint-staged"
   },

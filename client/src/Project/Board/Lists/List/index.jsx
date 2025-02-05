@@ -4,7 +4,7 @@ import moment from 'moment';
 import { Droppable } from 'react-beautiful-dnd';
 import { intersection } from 'lodash';
 
-import { IssueStatusCopy } from 'shared/constants/issues';
+import { IssueStatusCopy } from 'shared/../constants/issues';
 
 import Issue from './Issue';
 import { List, Title, IssuesCount, Issues } from './Styles';

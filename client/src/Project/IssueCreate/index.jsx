@@ -7,7 +7,7 @@ import {
   IssuePriority,
   IssueTypeCopy,
   IssuePriorityCopy,
-} from 'shared/constants/issues';
+} from 'shared/../constants/issues';
 import toast from 'shared/utils/toast';
 import useApi from 'shared/hooks/api';
 import useCurrentUser from 'shared/hooks/currentUser';

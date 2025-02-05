@@ -1,14 +1,15 @@
+// filepath: /Users/gururamu/Documents/personal/interview/jira/api/src/index.ts
 import 'module-alias/register';
 import 'dotenv/config';
 import 'reflect-metadata';
 import express from 'express';
 import cors from 'cors';
 
-import createDatabaseConnection from 'database/createConnection';
-import { addRespondToResponse } from 'middleware/response';
-import { authenticateUser } from 'middleware/authentication';
-import { handleError } from 'middleware/errors';
-import { RouteNotFoundError } from 'errors';
+import createDatabaseConnection from './database/createConnection';
+import { addRespondToResponse } from './middleware/response';
+import { authenticateUser } from './middleware/authentication';
+import { handleError } from './middleware/errors';
+import { RouteNotFoundError } from './errors';
 
 import { attachPublicRoutes, attachPrivateRoutes } from './routes';
 
@@ -16,7 +17,7 @@ const establishDatabaseConnection = async (): Promise<void> => {
   try {
     console.log('Connecting to database...');
     await createDatabaseConnection();
-    console.log('Connecting to database...');
+    console.log('Connected to database');
   } catch (error) {
     console.log(error);
   }

@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import Color from 'color';
 
-import { IssueType, IssueStatus, IssuePriority } from 'shared/constants/issues';
+import { IssueType, IssueStatus, IssuePriority } from 'shared/../constants/issues';
 
 export const color = {
   primary: '#0052cc', // Blue

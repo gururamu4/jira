@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink, useRouteMatch } from 'react-router-dom';
 
-import { ProjectCategoryCopy } from 'shared/constants/projects';
+import { ProjectCategoryCopy } from 'shared/../constants/projects';
 import { Icon, ProjectAvatar } from 'shared/components';
 
 import {

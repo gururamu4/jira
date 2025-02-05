@@ -5,7 +5,7 @@ import { DragDropContext } from 'react-beautiful-dnd';
 import useCurrentUser from 'shared/hooks/currentUser';
 import api from 'shared/utils/api';
 import { moveItemWithinArray, insertItemIntoArray } from 'shared/utils/javascript';
-import { IssueStatus } from 'shared/constants/issues';
+import { IssueStatus } from 'shared/../constants/issues';
 
 import List from './List';
 import { Lists } from './Styles';
