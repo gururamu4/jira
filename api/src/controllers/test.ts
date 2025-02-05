@@ -5,12 +5,12 @@ import createTestAccount from 'database/createTestAccount';
 
 export const resetDatabase = catchErrors(async (_req, res) => {
   await resetTestDatabase();
-  res.respond(true);
+  (res as any).respond(true);
 });
 
 export const createAccount = catchErrors(async (_req, res) => {
   const user = await createTestAccount();
-  res.respond({
+  (res as any).respond({
     authToken: signToken({ sub: user.id }),
   });
 });

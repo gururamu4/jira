@@ -17,7 +17,7 @@ export const authenticateUser = catchErrors(async (req, _res, next) => {
   if (!user) {
     throw new InvalidTokenError('Authentication token is invalid: User not found.');
   }
-  req.currentUser = user;
+  (req as any).currentUser = user;
   next();
 });
 
